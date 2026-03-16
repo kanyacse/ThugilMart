@@ -1,8 +1,30 @@
-# React + Vite
+# Thugilmart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Thugilmart is a modern e-commerce web application built using React and Vite.  
+It allows users to browse, search, and filter products easily.  
 
-Currently, two official plugins are available:
+The platform supports adding products to a shopping cart and seamless checkout.  
+Users can create accounts, log in, and manage their orders efficiently.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Thugilmart offers a responsive design, ensuring smooth usage on both desktop and mobile devices.  
+Products are displayed with images, descriptions, and prices for better visibility.  
+
+The application has reusable components like Header, Footer, ProductCard, and Cart.  
+Pages include Home, Products, and Checkout for a complete shopping experience.  
+
+React handles the UI, while Vite ensures fast development with Hot Module Replacement.  
+Tailwind CSS and custom styling provide a clean and modern interface.  
+
+The project is structured for scalability, with clear folders for components, pages, and assets.  
+Node.js and npm manage dependencies and project setup efficiently.  
+
+This application is ideal for small to medium e-commerce stores.  
+It demonstrates key frontend development skills suitable for interviews.  
+
+Installation is simple using `npm install` and `npm run dev` to start the server.  
+The app runs on [http://localhost:5173](http://localhost:5173) by default.  
+
+Thugilmart showcases practical React knowledge, component-based architecture, and state management.  
+It is a complete demo of a functional online store ready for further customization.  
+
+Author: KanniKa G  

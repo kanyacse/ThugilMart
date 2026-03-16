@@ -7,12 +7,14 @@ const Product = () => {
   const { productId } = useParams(); 
   const { products } = useContext(ShopContext); 
   const [productData, setProductData] = useState(null); 
-  const [imageLoaded, setImageLoaded] = useState(false); // for image loading
+  const [image, setImage] = useState(''); // for image loading
 
   const fetchProductData = async () => {
+
     products.map((item) => {
       if (item._id === productId) {
         setProductData(item);
+        setImage(item.image[0])
         return null;
       }
     });
@@ -20,31 +22,21 @@ const Product = () => {
 
   useEffect(() => {
     fetchProductData();
-  }, [productId, products]);
+  }, [productId]);
 
-  if (!productData) {
-    return <div>Product not found.</div>;
-  }
+ 
 
-  return (
-    <div className="product-page">
-      <h1>{productData.name}</h1>
+  return productData ? (
+    <div className='border-t-2 pt-20 transition-opacity ease-in duration-500 opacity-100'>
+      <div className='flex gap-12 sm:gap-12 flex-col sm:flex-row'>
 
-      {!imageLoaded && <p>Loading image...</p>} {/* Show loading text until image loads */}
+<div className='flex-1 flex flex-col-reverse gap-3 sm:flex-row'>
+<div classNamr='flex sm:flex-col overflow-x-auto sm:overflow-y-scroll justify-between sm:justify-normal sm:w-[18.7%] w-full'></div>
+</div>
 
-      <img
-        src={productData.image}
-        alt={productData.name}
-        style={{ width: '300px', display: imageLoaded ? 'block' : 'none' }}
-        onLoad={() => setImageLoaded(true)} // When image loads, set true
-        onError={() => setImageLoaded(true)} // To handle broken image
-      />
-
-      <p>{productData.description}</p>
-      <p>Price: ${productData.price}</p>
-      <button>Add to Cart</button>
+      </div>
     </div>
-  );
+  ):<div className='opacity-0'></div>
 };
 
 export default Product;

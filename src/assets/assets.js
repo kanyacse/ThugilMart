@@ -8,6 +8,8 @@ import securityicon from './icons/security_icon.jpeg';
 import deliceryicon from './icons/delicery_icon.jpeg';
 import exchangeicon from './icons/Exchange_icon.webp';
 import supporticon from './icons/Support_icon.jpeg';
+import searchicon from './icons/search.png'
+import crossicon from './icons/cross.png'
 
 // Product images
 import shortKurti01 from './products/shortkurti_03.jpeg';
@@ -34,6 +36,7 @@ import marroonShirtBoy from './products/marron_shirt_boy.jpeg';
 import kurtiRed from './products/kurti_red.jpeg';
 import jeansGirl from './products/jeans_girll.jpeg';
 import jeansGirl2 from './products/jeans _gitl.jpeg';
+import kurtiblue from './products/kurti_red2.webp'
 
 const assets = {
   logos: {
@@ -46,10 +49,12 @@ const assets = {
     deliceryicon,
     exchangeicon,
     supporticon,
+    searchicon,
+    crossicon,
   },
   products: [
     { _id: "1", name: "Short Kurti", description: "Elegant short kurti with floral patterns.", price: 1000, image: [shortKurti01], category: "Women", subCategory: "topwear", sizes: ["S", "M", "L", "XL"], date: "2025-09-10", bestseller: true },
-    { _id: "2", name: "Blue Kurti 02", description: "Stylish blue kurti for casual and festive wear.", price: 1200, image: [blueKurti02], category: "Women", subCategory: "topwear", sizes: ["M", "L"], date: "2025-09-05", bestseller: false },
+    { _id: "2", name: "Blue Kurti 02", description: "Stylish blue kurti for casual and festive wear.", price: 1200, image: [blueKurti02, kurtiblue], category: "Women", subCategory: "topwear", sizes: ["M", "L"], date: "2025-09-05", bestseller: false },
     { _id: "3", name: "Blue Kurti 01", description: "Classic blue kurti blending modern and traditional styles.", price: 1100, image: [blueKurti01], category: "Women", subCategory: "topwear", sizes: ["S", "M", "L"], date: "2025-09-01", bestseller: true },
     { _id: "4", name: "Men Pant", description: "Comfortable men pant perfect for daily wear.", price: 900, image: [boyPant], category: "Men", subCategory: "bottomwear", sizes: ["M", "L"], date: "2025-08-20", bestseller: false },
     { _id: "5", name: "Women Jean Maroon", description: "Trendy maroon jeans for women.", price: 1300, image: [girlJeanMaroon], category: "Women", subCategory: "bottomwear", sizes: ["S", "M"], date: "2025-08-15", bestseller: true },

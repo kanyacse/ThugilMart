@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col items-start md:w-1/3">
           <img src={assets.logos.main} alt="ThugilMart Logo" className="h-12 mb-4" />
           <p className="text-sm text-gray-600">
-            ThugilMart is a leading e-commerce platform providing a wide range of products from fashion to electronics. We aim to bring the best deals and seamless shopping experience to customers across India.
+            ThugilMart is a leading e-commerce platform ghjklgit providing a wide range of products from fashion to electronics. We aim to bring the best deals and seamless shopping experience to customers across India.
           </p>
         </div>
 
